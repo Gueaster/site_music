@@ -12,27 +12,42 @@
 </head>
 <body>
 <header>
+    <figure class="logo">
+        <img src="assets/img/logo.jpg" alt="">
+        <figcaption>
+            STEAZIK
+        </figcaption>
+    </figure>
+    /* LOGO + NOM DU SITE + MENU DE NAV + BARRE DE RECHERCHE */
     <nav>
         <ul>
-            <li>
-                <a href="index" class="logo">  <img src="assets/img/logo.jpg" alt="logo_accueil" width="100px" height="100px"></a>
-            </li>
-            <li>
-                <a href="inscription">Inscription</a>
-            </li>
-
+            <li class="active"><a href="#">Accueil</a></li>
+            <li><a href="#">Playlist</a></li>
+            <li><a href="#">Devenir membre ?</a></li>
+            <li><a href="#">À propos de nous</a></li>
         </ul>
+        <input type="text" name="search" placeholder="Rechercher">
     </nav>
-
-
-
 </header>
-
-<p>
-    Envie d'une plateforme pour écouter les derniers sons gratuitement et sans obligation d'inscription ? <br> <br>
-    Ici profite simplement de musiques à écouter sans publicités
-</p>
-
+<section>
+    /* TITRE DE LA ZIK + IMG + SOURCE AUDIO */
+    <div>
+        <div>
+            <title>Accueil</title>
+        </div>
+        <div>
+        <img src="https://img.audiofanzine.com/images/u/product/normal/diginoiz-big-room-midi-king-250514.jpg" alt="Big Room Vol.1">
+            <figure>
+                <figcaption>
+                    Titre de la musique
+                </figcaption>
+                <audio src="#" controls>
+                    Texte alternatif : votre navigateur ne comprend pas le format audio
+                </audio>
+            </figure>
+        </div>
+    </div>
+</section>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
