@@ -5,27 +5,42 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../public/css/styles.css">
     <title>Inscription - Steazik</title>
 </head>
 <body>
 <section class="page-form">
-    <h2>Inscrivez-vous !</h2>
-    <form action="#" method="POST">
+
+    <h2 class="title-inscription">Inscrivez-vous !</h2>
+
+    <form action="#" method="POST" class="form-inscription">
+
         <fieldset>
             <legend><label for="last-name">Prénom :</label></legend>
             <input type="text" name="lastname" id="last-name" placeholder="Entre ton prénom" required />
         </fieldset>
+
         <fieldset>
-            <legend><label for="email">Pseudo :</label></legend>
-            <input type="email" name="email" id="email" placeholder="Entre un pseudo" required />
+            <legend><label for="pseudo">Pseudo :</label></legend>
+            <input type="pseudo" name="pseudo" id="pseudo" placeholder="Entre un pseudo" required />
         </fieldset>
+
         <fieldset>
             <legend><label for="email">Email :</label></legend>
             <input type="email" name="email" id="email" placeholder="Entre ton email" required />
         </fieldset>
+
+        <fieldset>
+            <legend><label for="password">Mot de passe :</label></legend>
+            <input type="password" name="password" id="password" placeholder="Entre ton mot de passe" required />
+        </fieldset>
+
         <br>
-        <button type="submit">Envoyez</button>
+
+        <button type="submit" class="button-submit">Envoyez</button>
+
     </form>
+
 </section>
 </body>
 </html>
