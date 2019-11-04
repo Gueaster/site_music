@@ -1,0 +1,7 @@
+{
+    "name": "stagiaire/site_music",
+    "description": "Site de music",
+    "type": "project",
+    "license": "MIT",
+    "require": {}
+}
