@@ -7,7 +7,12 @@ $uri = $_SERVER['REQUEST_URI'];
 
 $uri = explode("/", trim($uri, "/"));
 
-if (!$uri[0]) { $uri[0] = "index"; }
+if ($uri[0] == "") { $uri[0] = "index"; }
+
+if ( !file_exists("../templates/".$uri[0].".phtml") )
+{
+    header("Location: /");
+}
 
 try {
     require_once "../templates/".$uri[0].".phtml";
